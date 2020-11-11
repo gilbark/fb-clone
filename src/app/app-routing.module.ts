@@ -1,3 +1,4 @@
+import { RegisterComponent } from "./components/register/register.component";
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { RouterModule, Routes } from "@angular/router";
@@ -8,6 +9,7 @@ import { FacebookGuard } from "./guards/facebook-guard.guard";
 const routes: Routes = [
   { path: "", component: HomeComponent, canActivate: [FacebookGuard] },
   { path: "login", component: LoginComponent },
+  { path: "register", component: RegisterComponent },
 ];
 
 @NgModule({
