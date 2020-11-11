@@ -14,4 +14,107 @@
   width: 100%;
   display: flex;
   gap: 20px;
+  align-items: center;
+  justify-content: center;
+
+  &-left {
+    width: 580px;
+    padding-right: 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    img {
+      height: 56px;
+      margin-right: 32px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: normal;
+      line-height: 32px;
+      width: 500px;
+    }
+  } // Left side of header ends here
+
+  &-right {
+    &-card {
+      height: 380px;
+      width: 400px;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+
+      &-content {
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+
+        .login-form {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          input {
+            padding: 20px;
+            outline: none;
+            border: 1px solid lightgray;
+            border-radius: 5px;
+
+            &::placeholder {
+              font-size: 16px;
+              font-weight: normal;
+            }
+          }
+
+          .login-button {
+            background-color: $primary-button-color;
+            padding: 15px;
+            outline: none;
+            border: none;
+            border-radius: 7px;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            cursor: pointer;
+          }
+        } // Login form ends here
+
+        a {
+          text-decoration: none;
+          color: $primary-button-color;
+          text-align: center;
+          border-bottom: 1px solid lightgray;
+          margin-bottom: 20px;
+          padding-bottom: 20px;
+          cursor: pointer;
+        }
+
+        .create-account {
+          background-color: $success-button-color;
+          display: inline-block;
+          align-self: center;
+          outline: none;
+          border: none;
+          border-radius: 7px;
+          padding: 15px 30px;
+          margin-top: 15px;
+          color: white;
+          font-size: 18px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+    } // Card ends here
+  }
+} // Header ends here
+
+.login-footer {
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+  align-items: center;
 }

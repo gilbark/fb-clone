@@ -9,7 +9,7 @@
 
     <div class="login-header-right">
       <mat-card class="login-header-right-card">
-        <mat-card-content>
+        <mat-card-content class="login-header-right-card-content">
           <form #form="ngForm" class="login-form" (ngSubmit)="login(form)">
             <input
               type="text"
@@ -27,7 +27,9 @@
               class="login-button"
               type="submit"
               [disabled]="form.invalid || form.pending"
-            ></button>
+            >
+              Log in
+            </button>
           </form>
           <a href="#">Forgot password?</a>
           <button class="create-account" (click)="onRegister()">
@@ -38,7 +40,7 @@
     </div>
   </header>
 
-  <footer>
+  <footer class="login-footer">
     <img src="assets/footer_crop.jpg" alt="" />
   </footer>
 </div>
